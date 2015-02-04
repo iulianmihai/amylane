@@ -1,0 +1,279 @@
+@navcolor: #fc6a3b;
+@textindent: -9000px;
+@badcolor:#bad444;
+
+@font-face {
+  font-family: 'Helvetica Neue LT';
+  src: url('/fonts/HelveticaNeueLTStd-Lt.eot');
+  src: local('☺'),
+  url('/fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
+  url('/fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype');
+}
+
+body {
+  margin:0;
+}
+.clearfix {
+  clear: both;
+}
+.content {
+  width: 1140px;
+  margin: auto;
+  header {
+    width: 1140px;
+    margin-top: 25px;
+
+    .logo{
+      background: url(/img/amylane_logo.png) no-repeat left top;
+      margin: 0 0 0 60px;
+      width: 305px;
+      height: 130px;
+      float: left;
+      text-indent: @textindent;
+      dysplay:block;
+    }
+    nav {
+      float: left;
+      margin-left: 68px;
+      margin-top: 120px;
+      color: @navcolor;
+
+      ul {
+        list-style-type: none;
+        padding:0;
+        margin:0;
+
+        li {
+          float:left;
+          padding: 10px 20px 10px 20px;
+          border-left: 1px solid @navcolor;
+
+          &.first {
+            width:110px;
+            border-left: none;
+          }
+          &.second {
+            width:150px;
+          }
+          &.third {
+            width:100px;
+          }
+          &.fourth {
+            width:55px;
+            padding-bottom:26px;
+          }
+          &.fifth {
+            width:77px;
+            padding-bottom:26px;
+          }
+          a {
+            color: @navcolor;
+            text-decoration: none;
+            text-transform: uppercase;
+            font: normal 12px "Helvetica Neue LT";
+            letter-spacing: 2px;
+
+            &:hover {
+              color: #df4b6b;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner {
+    background: url(/img/amylane_home.png) no-repeat left top;
+    width: 1140px;
+    height: 448px;
+    text-indent: @textindent;
+    margin-top:28px;
+  }
+  .below-banner {
+    width: 1019px;
+    background-color: #c8dd68;
+    padding:60px;
+    color: #4e4e4e;
+    font: normal 28px Helvetica Neue LT;
+    line-height: 36px;
+  }
+
+  // START CIRCLES
+  .circles {
+    margin:auto;
+    .circle {
+      background: #f00;
+      width: 274px;
+      height: 274px;
+      border-radius: 50%;
+      float: left;
+      margin: 70px 38px;
+    }
+    .small-circle {
+      background: #f00;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      float: left;
+      margin: 115px 38px 0 38px;
+    }
+    .blue {
+      background: #1e5068;
+      margin-left:82px
+    }
+    .green {
+      background: @badcolor;
+    }
+    .orange {
+      background: #fc6a3b;
+      margin-right:0;
+    }
+    .small-left {
+      margin-left:0;
+    }
+    a {
+      font: normal 20px Helvetica Neue LT;
+      text-transform: uppercase;
+      color:#ffffff;
+      text-decoration: none;
+      display:block;
+      margin:110px auto auto auto;
+      letter-spacing: 6px;
+      text-align: center;
+
+      &.small {
+        font: normal 10px Helvetica Neue LT;
+        margin:58px auto auto auto;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  .small-circles {
+    margin:auto;
+    width:575px;
+  }
+
+  //END CIRCLES
+
+  //START Interior Pages
+  .interior-banner1 {
+    margin-top:172px;
+    background-color:#ef5474;
+    height:515px;
+    position:relative;
+
+    .circle {
+      background: #990066;
+      width: 254px;
+      height: 254px;
+      border-radius: 50%;
+      top: -50%;
+      left: 50%;
+      margin-top: 127px;
+      margin-left: -127px;
+      position:absolute;
+
+      h1{
+        color:#ffffff;
+        text-align:center;
+        margin:100px auto auto auto;
+        text-transform: uppercase;
+        font: normal 29px Helvetica Neue LT;
+        letter-spacing: 2px;
+        transform: scale(1,1.3);
+        -webkit-transform: scale(1,1.3);
+        -moz-transform: scale(1,1.3);
+        -ms-transform: scale(1,1.3);
+        -o-transform: scale(1,1.3);
+
+      }
+    }
+  }
+
+  .interior-banner2 {
+    margin-top:20px;
+    background-color:#fc6a3b;
+    height:440px;
+  }
+  //Start About
+  .interior-banner1-about {
+    background-color:#990066;
+    .circle {
+      background-color:#ef5474;
+      h1{
+        margin-top:70px;
+      }
+    }
+  }
+  .interior-banner2-about {
+    background-color: @badcolor;
+    margin-top:20px;
+    height:440px;
+  }
+  //End About
+
+  //Start Personal Motivation
+  .interior-banner1-motivation {
+    background-color:@badcolor;
+    .circle {
+      background-color:@navcolor;
+      h1{
+        margin-top:90px;
+      }
+    }
+  }
+  .interior-banner2-motivation {
+    background-color: @navcolor;
+    margin-top:20px;
+    height:440px;
+  }
+  //End Personal Motivation
+
+  //Start Managing Chronic Disease
+  .interior-banner1-disease {
+    background-color:#2d7598;
+    .circle {
+      background-color:@badcolor;
+      h1{
+        margin-top:77px;
+      }
+    }
+  }
+  .interior-banner2-disease {
+    background-color: @badcolor;
+    margin-top:20px;
+    height:440px;
+  }
+  //End Managing Chronic Disease
+
+  //END Interior pages
+
+
+
+
+  .address {
+    color:#ef5a78;
+    text-transform: uppercase;
+    font: normal 12px Helvetica Neue LT;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top:80px
+  }
+  .credits {
+    color:#999999;
+    text-transform: uppercase;
+    font: normal 10px Helvetica Neue LT;
+    text-align: center;
+    margin-top:70px;
+    margin-bottom:300px;
+
+    a {
+      color:#1e5068;
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
