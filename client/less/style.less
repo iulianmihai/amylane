@@ -1,6 +1,7 @@
 @navcolor: #fc6a3b;
 @textindent: -9000px;
 @badcolor:#bad444;
+@bluecolor:#2d7598;
 
 @font-face {
   font-family: 'Helvetica Neue LT';
@@ -45,7 +46,7 @@ body {
 
         li {
           float:left;
-          padding: 10px 20px 10px 20px;
+          padding: 10px 18px 10px 18px;
           border-left: 1px solid @navcolor;
 
           &.first {
@@ -158,6 +159,9 @@ body {
 
   //START Interior Pages
   .interior-banner1 {
+    margin-left:auto;
+    margin-right:auto;
+    width:1020px;
     margin-top:172px;
     background-color:#ef5474;
     height:515px;
@@ -189,12 +193,76 @@ body {
 
       }
     }
+    .left {
+      float:left;
+      margin-top:164px;
+      margin-left:64px;
+
+      h1 {
+        color:#333333;
+        font: normal 35px "Helvetica Neue LT";
+        margin:0;
+      }
+      p {
+        color:#ffffff;
+        font: normal 24px "Helvetica Neue LT";
+        margin:0;
+        text-align: center;
+      }
+    }
+    .right {
+      float:left;
+      margin-top:164px;
+      margin-left:35px;
+      border-left:1px solid #ffffff;
+      padding-left:45px;
+
+      p {
+        color:#ffffff;
+        font: normal 24px "Helvetica Neue LT";
+        margin:0;
+        text-align: left;
+      }
+
+      ul {
+        padding-left:18px;
+        li {
+          color:#333333;
+          font: normal 24px "Helvetica Neue LT";
+          padding-bottom:15px;
+        }
+      }
+    }
   }
 
   .interior-banner2 {
     margin-top:20px;
     background-color:#fc6a3b;
     height:440px;
+    margin-left:auto;
+    margin-right:auto;
+    width:1020px;
+
+    .left {
+      padding:90px 0 0 80px;
+      float:left;
+      width:457px;
+
+      h1 {
+        color:#ffffff;
+        font: normal 35px "Helvetica Neue LT";
+      }
+      p {
+        color:#ffffff;
+        font: normal 18px "Helvetica Neue LT";
+        margin:0;
+        line-height: 25px;
+      }
+    }
+    .right {
+      float:left;
+      width:380px;
+    }
   }
   //Start About
   .interior-banner1-about {
@@ -232,7 +300,7 @@ body {
 
   //Start Managing Chronic Disease
   .interior-banner1-disease {
-    background-color:#2d7598;
+    background-color:@bluecolor;
     .circle {
       background-color:@badcolor;
       h1{
@@ -242,6 +310,24 @@ body {
   }
   .interior-banner2-disease {
     background-color: @badcolor;
+    margin-top:20px;
+    height:440px;
+  }
+  //End Managing Chronic Disease
+
+  //Start Managing Chronic Disease
+  .interior-banner1-career {
+    background-color:@badcolor;
+    .circle {
+      background-color:@bluecolor;
+      h1{
+        margin-top:77px;
+        color:@badcolor;
+      }
+    }
+  }
+  .interior-banner2-career {
+    background-color: @bluecolor;
     margin-top:20px;
     height:440px;
   }
