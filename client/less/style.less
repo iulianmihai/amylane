@@ -299,6 +299,7 @@ body {
 
       ul {
         padding-left:15px;
+        margin-bottom:50px;
 
         li {
           color: #1e5068;
@@ -310,6 +311,26 @@ body {
       p {
         color: #333333;
         font: normal 16px "Helvetica Neue LT";
+        margin-bottom:65px;
+      }
+
+      .download {
+        background:@badcolor url(/img/pdf_icon.png) no-repeat 23px 9px;
+        border-radius:4px;
+        width:225px;
+        display:block;
+        color: #ffffff;
+        font: normal 20px "Helvetica Neue LT";
+        text-decoration: none;
+        padding:7px 7px 7px 90px;
+        margin-bottom:80px;
+
+        span {
+          font: normal 12px "Helvetica Neue LT";
+          display:block;
+          color:#1e5068;
+        }
+
       }
 
     }
@@ -364,6 +385,22 @@ body {
         margin-top:77px;
       }
     }
+
+    .left {
+      h1 {
+        color:@badcolor;
+        text-align: center;
+      }
+    }
+
+    .right {
+      ul {
+        li {
+          color:@badcolor;
+        }
+      }
+    }
+
   }
   .interior-banner2-disease {
     background-color: @badcolor;
@@ -373,6 +410,25 @@ body {
     .right {
       background:url(/img/chronic_img1.png) no-repeat left top;
     }
+  }
+
+  .interior-banner3-disease {
+    .left {
+      background:url(/img/chronic_img2.png) no-repeat left top;
+    }
+    .right {
+      h1, h2 {
+        color: #990066;
+      }
+      .download {
+        background-color: #990066;
+
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+
   }
   //End Managing Chronic Disease
 
