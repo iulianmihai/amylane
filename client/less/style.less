@@ -77,6 +77,10 @@ body {
             &:hover {
               color: #df4b6b;
             }
+
+            &.active {
+              color:#1e5068;
+            }
           }
         }
       }
@@ -312,6 +316,7 @@ body {
         color: #333333;
         font: normal 16px "Helvetica Neue LT";
         margin-bottom:65px;
+        line-height: 22px;
       }
 
       .download {
@@ -339,22 +344,112 @@ body {
   //Start About
   .interior-banner1-about {
     background-color:#990066;
+    height:400px;
     .circle {
       background-color:#ef5474;
+      margin-top:70px;
       h1{
         margin-top:70px;
       }
+    }
+    blockquote {
+      margin:auto;
+      top:199px;
+      width:675px;
+      position: relative;
+      color:#ffffff;
+      font: normal 35px "Helvetica Neue LT";
     }
   }
   .interior-banner2-about {
     background-color: @badcolor;
     margin-top:20px;
     height:440px;
+
+    .left {
+      width:520px;
+      h2 {
+        color:#1e5068;
+        font: normal 22px "Helvetica Neue LT";
+      }
+      p {
+        color:#1e5068;
+        margin-bottom:20px;
+      }
+    }
     .right {
       background:url(/img/about_img1.png) no-repeat left top;
     }
   }
+  .interior-banner3-about {
+    .left {
+      background:url(/img/about_img2.png) no-repeat left top;
+    }
+    .right {
+      width:540px;
+      h1{
+        color:#990066;
+        margin-bottom:15px;
+      }
+      p {
+        margin-bottom:35px;
+        margin-top:0;
+        color: #1e5068;
+        font-size:18px;
+        line-height: 24px;
+      }
+    }
+  }
   //End About
+
+
+  .interior-banner1-contact {
+    .left {
+      h1 {
+        color:#990066;
+        margin-top:75px;
+      }
+    }
+    .right {
+      width:512px;
+
+      p{
+        line-height: 48px;
+      }
+    }
+  }
+  .interior-banner2-contact {
+    .left {
+      padding-top:135px;
+      p {
+        font: normal 18px "Helvetica Neue LT";
+        text-transform: uppercase;
+        line-height: 34px;
+        letter-spacing: 4px;
+        margin-bottom:35px;
+      }
+      a {
+        font: normal 18px "Helvetica Neue LT";
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:#1e5068;
+
+      }
+    }
+    .right {
+      background:url(/img/contact_img1.png) no-repeat right top;
+    }
+  }
+
+
+
+
+
+
+
+
+
 
   //Start Personal Motivation
   .interior-banner1-motivation {
@@ -365,6 +460,11 @@ body {
         margin-top:90px;
       }
     }
+    .left{
+      h1 {
+        text-align: center;
+      }
+    }
   }
   .interior-banner2-motivation {
     background-color: @navcolor;
@@ -372,6 +472,30 @@ body {
     height:440px;
     .right {
       background:url(/img/personal_img1.png) no-repeat left top;
+    }
+  }
+
+  .interior-banner3-motivation {
+    .left{
+      background:url(/img/personal_img2.png) no-repeat left top;
+    }
+    .right {
+      h1 {
+        color:#fd8862;
+      }
+      h2 {
+        color:#fd8862;
+      }
+      .download {
+        background-color:#fd8862;
+
+        span {
+          color: #ffffff;
+        }
+      }
+      p {
+        margin-bottom:40px;
+      }
     }
   }
   //End Personal Motivation
